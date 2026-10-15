@@ -1,0 +1,31 @@
+[project]
+name = "pytorch-environment"
+version = "0.1.0"
+description = "Reference PyTorch machine-learning environment"
+requires-python = ">=3.10"
+dependencies = [
+    "alive-progress",
+    "dill",
+    "hydra-core",
+    "imageio",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pyDOE",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "statsmodels",
+    "sympy",
+    "torch",
+    "torchaudio",
+    "torchvision",
+]
+
+[project.optional-dependencies]
+notebook = ["ipyparallel", "ipywidgets", "jupyterlab", "notebook", "qtconsole"]
+dev = ["black", "pytest", "pytest-asyncio", "sphinx"]
+
+[tool.uv]
+package = false
+

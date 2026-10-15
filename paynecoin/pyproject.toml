@@ -1,0 +1,21 @@
+[project]
+name = "paynecoin-environment"
+version = "0.1.0"
+description = "Reference scientific-computing environment for Paynecoin"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "scipy",
+    "sympy",
+]
+
+[project.optional-dependencies]
+notebook = ["ipyparallel", "ipywidgets", "notebook", "qtconsole"]
+dev = ["black", "pytest", "pytest-asyncio", "sphinx"]
+extras = ["palettable", "xlrd"]
+
+[tool.uv]
+package = false
+

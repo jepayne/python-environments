@@ -1,0 +1,34 @@
+[project]
+name = "bondyield-environment"
+version = "0.1.0"
+description = "Reference environment for bond-yield and econometric analysis"
+requires-python = ">=3.10"
+dependencies = [
+    "arch",
+    "h5py",
+    "linearmodels",
+    "lxml",
+    "matplotlib",
+    "memory-profiler",
+    "numpy",
+    "openpyxl",
+    "pandas",
+    "pyDOE",
+    "ruptures",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "stargazer",
+    "statsmodels",
+    "sympy",
+    "tables",
+    "xlrd",
+]
+
+[project.optional-dependencies]
+notebook = ["ipyparallel", "ipywidgets", "jupyterlab", "notebook", "qtconsole"]
+dev = ["black", "cython", "pytest", "pytest-asyncio", "sphinx"]
+
+[tool.uv]
+package = false
+

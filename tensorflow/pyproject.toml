@@ -1,0 +1,26 @@
+[project]
+name = "tensorflow-environment"
+version = "0.1.0"
+description = "Reference TensorFlow environment for Apple Silicon"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib",
+    "numexpr",
+    "numpy",
+    "openpyxl",
+    "pandas",
+    "scipy",
+    "seaborn",
+    "sympy",
+    "tensorflow-macos",
+    "tensorflow-metal",
+    "xlrd",
+]
+
+[project.optional-dependencies]
+notebook = ["ipyparallel", "ipywidgets", "notebook", "qtconsole"]
+dev = ["black", "cython", "pytest", "pytest-asyncio", "sphinx-rtd-theme"]
+
+[tool.uv]
+package = false
+
