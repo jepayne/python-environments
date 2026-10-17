@@ -2,7 +2,7 @@
 name = "paynecoin-environment"
 version = "0.1.0"
 description = "Reference scientific-computing environment for Paynecoin"
-requires-python = ">=3.10"
+requires-python = ">=3.14,<3.15"
 dependencies = [
     "matplotlib",
     "numpy",

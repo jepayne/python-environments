@@ -2,7 +2,7 @@
 name = "tensorflow-environment"
 version = "0.1.0"
 description = "Reference TensorFlow environment for Apple Silicon"
-requires-python = ">=3.10"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "matplotlib",
     "numexpr",
@@ -12,8 +12,8 @@ dependencies = [
     "scipy",
     "seaborn",
     "sympy",
-    "tensorflow-macos",
-    "tensorflow-metal",
+    "tensorflow==2.18.1",
+    "tensorflow-metal==1.2.0",
     "xlrd",
 ]
 
